@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<script type="text/javascript">
+	$(function() {
+	  setTimeout(function(){
+	    $('li[data-img-src]').each(function(){
+	      var src = $(this).attr('data-img-src');
+	      $('<img>').attr('src', src).appendTo('ul');
+	    });
+	  }, 600);
+	});
+</script>
+
+<body>
+	<div class="container" style="margin-top: 20px">
+		<div class="row">
+			<div class="col s12 m3 l3">
+				<img class="circle responsive-img z-depth-2" src="img/profile.png">
+			</div>
+			<div class="col s12 m6 l7 center ">
+				<h3>Felipe Resende</h3>
+
+				<p>This is my portfolio of illustrations with illustrations for events, commissions, comics and other personal works. Main contact in <a href="mailto:feliperesendehq@outlook.com">feliperesendehq@outlook.com</a></p>
+			</div>
+			<div class="col s12 m3 l2 right">
+				<a href="https://www.patreon.com/feliperesende" target="_blak">
+					<p class="valign-wrapper center-align">
+					<img src="img/social/path.png" class="circle">&nbsp;Patreon</p>
+				</a>
+				<a href="https://twitter.com/FelipeResendeHQ" target="_blank">
+					<p class="valign-wrapper center-align">
+					<img src="img/social/twitter.png" class="circle">&nbsp;Twitter</p>
+				</a>
+				<a href="https://www.facebook.com/felipe.resende.967" target="_blank">
+					<p class="valign-wrapper center-align">
+					<img src="img/social/facebook.png" class="circle">&nbsp;Facebook</p>
+				</a>
+				<a href="mailto:feliperesendehq@outlook.com" target="_blank">
+					<p class="valign-wrapper center-align">
+					<img src="img/social/gmail.png" class="circle">&nbsp;Email</p>
+				</a>
+				<a href="https://github.com/FelipeRes" target="_blank">
+					<p class="valign-wrapper center-align">
+					<img src="img/social/github.png" class="circle">&nbsp;Github</p>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+        <div id="images">
+        	<div class="col s12 m6 l4 left-align">
+	            <div class="card" v-for='pic in aleatory'>
+	              <div class="card-image">
+	                <img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+	              </div>
+	            </div>
+            </div>
+            <div class="col s12 m6 l4 left-align">
+	            <div class="card" v-for='pic in comic'>
+	              <div class="card-image">
+	                <img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+	              </div>
+	            </div>
+            </div>
+            <div class="col s12 m6 l4 left-align">
+	            <div class="card" v-for='pic in works'>
+	              <div class="card-image">
+	                <img id="watermark" class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+	              </div>
+	            </div>
+            </div>
+        </div>
+		</div>
+		<div class="col s12 m12 l12 center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</div>
+	<script type="text/javascript">
+		var app = new Vue({
+			el:'#images',
+			data: {
+				aleatory:[
+					'img/aleatory/MeninasSuper.jpg',
+					'img/aleatory/cbmap.jpg',
+					'img/aleatory/rascunho.jpg',
+					'img/aleatory/Hildr3.jpg',
+					'img/aleatory/Game Desing.jpg',
+					'img/aleatory/Rainbow.jpg',
+					'img/aleatory/Frist image.jpg',
+					'img/aleatory/All Histories.jpg',
+					'img/aleatory/proto.jpg',
+					'img/aleatory/cristal.jpg',
+				],
+				comic:[
+					'img/comic/magesty.jpg',
+					'img/comic/apo-pg5.jpg',
+					'img/comic/apo-capa-04.jpg',
+					'img/comic/lily face.jpg',
+					'img/comic/cb-pag1.jpg',
+					'img/comic/desperta autor.jpg',
+
+				],
+				works:[
+					'img/works/ggj2017-charactes.jpg',
+					'img/works/ronald.jpg',
+					'img/works/bruno2.jpg',
+					'img/works/palestra.jpg',
+					'img/works/Uno and Lily2.jpg',
+					'img/works/ggj2015.jpg',
+					'img/works/CamisaFinal.jpg',
+					'img/works/Marcelino.jpg',
+					'img/works/modelagem3d.jpg',
+					'img/works/Competition.jpg',
+					'img/works/Base.jpg',
+				]
+			}
+		})
+	</script>
+</body>
+</html>
