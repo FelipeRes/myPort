@@ -36,14 +36,14 @@
 				<p>This is my portfolio of illustrations with illustrations for events, commissions, comics and other personal works. Main contact in <a href="mailto:feliperesendehq@outlook.com">feliperesendehq@outlook.com</a></p>
 			</div>
 			<div class="col s12 m3 l2 right">
-				<a href="https://www.patreon.com/feliperesende" target="_blak">
+				<!--<a href="https://www.patreon.com/feliperesende" target="_blak">
 					<p class="valign-wrapper center-align">
 					<img src="img/social/path.png" class="circle">&nbsp;Patreon</p>
 				</a>
 				<a href="https://twitter.com/FelipeResendeHQ" target="_blank">
 					<p class="valign-wrapper center-align">
 					<img src="img/social/twitter.png" class="circle">&nbsp;Twitter</p>
-				</a>
+				</a>-->
 				<a href="https://www.facebook.com/felipe.resende.967" target="_blank">
 					<p class="valign-wrapper center-align">
 					<img src="img/social/facebook.png" class="circle">&nbsp;Facebook</p>
@@ -60,27 +60,63 @@
 		</div>
 		<div class="row">
         <div id="images">
-        	<div class="col s12 m6 l4 left-align">
-	            <div class="card" v-for='pic in aleatory'>
-	              <div class="card-image">
-	                <img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
-	              </div>
-	            </div>
-            </div>
-            <div class="col s12 m6 l4 left-align">
-	            <div class="card" v-for='pic in comic'>
-	              <div class="card-image">
-	                <img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
-	              </div>
-	            </div>
-            </div>
-            <div class="col s12 m6 l4 left-align">
-	            <div class="card" v-for='pic in works'>
-	              <div class="card-image">
-	                <img id="watermark" class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
-	              </div>
-	            </div>
-            </div>
+        	<div class="col s12 m12 l12 left-align">
+							<h4 class="center">Events </h4>
+							<p class="center"><b>These are posters of events that I participated and organized</b></p>
+							<div class="col s12 m6 l4" v-for='pic in aleatory'>
+								<div class="card">
+									<div class="card-image s12 m6 l4">
+										<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+            <div class="col s12 m12 l12 left-align">
+							<h4 class="center">Comics </h4>
+							<p class="center"><b>I like draw comics and these are some studies, orders and personal works</b></p>
+							<div class="col s12 m6 l4" v-for='pic in comic'>
+								<div class="card">
+									<div class="card-image s12 m6 l4">
+										<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+            <div class="col s12 m12 l12 left-align">
+							<h4 class="center">Free Draw</h4>
+							<p class="center"><b>Sometimes, I make some fanarts and complex more complex drawings</b></p>
+	            <div class="col s12 m6 l4" v-for='pic in works'>
+									<div class="card">
+										<div class="card-image s12 m6 l4">
+											<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="col s12 m12 l12 left-align">
+								<a href="https://labiras.cc/crownbrawl/"><h4 class="center">Crown Brawl</h4></a>
+								<p class="center"><b>This is a game where I participated as a programmer, screen designer, illustrator, did some 3D modeling and textures. I did a little of everything. You can visit the <a href="https://labiras.cc/crownbrawl/">site</a> for more information</b></p>
+								<div class="col s12 m6 l4" v-for='pic in games'>
+										<div class="card">
+											<div class="card-image s12 m6 l4">
+												<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="col s12 m12 l12 left-align">
+									<h4 class="center">Logos</h4>
+									<p class="center"><b>These are some logos to orders. Here are works with vector, 3D model and ilustrations</b></p>
+									<div class="col s12 m6 l4" v-for='pic in logos'>
+											<div class="card">
+												<div class="card-image s12 m6 l4">
+													<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+												</div>
+											</div>
+										</div>
+								</div>
         </div>
 		</div>
 		<div class="col s12 m12 l12 center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -91,40 +127,47 @@
 			data: {
 				aleatory:[
 					'img/aleatory/Cartaz.jpg',
-					'img/aleatory/MeninasSuper.jpg',
-					'img/aleatory/cbmap.jpg',
-					'img/aleatory/rascunho.jpg',
-					'img/aleatory/Hildr3.jpg',
-					'img/aleatory/Game Desing.jpg',
-					'img/aleatory/Rainbow.jpg',
-					'img/aleatory/Frist image.jpg',
-					'img/aleatory/All Histories.jpg',
-					'img/aleatory/proto.jpg',
-					'img/aleatory/cristal.jpg',
+					'img/comic/arduino-day-cartaz.jpg',
+					'img/works/cartaz-sangria.jpg',
+					'img/works/cartaz.jpg',
+					'img/works/GenuinoDay Cartaz2GG.jpg',
+					'img/works/Cartaz Final.jpg',
 				],
 				comic:[
-					'img/comic/arduino-day-cartaz.jpg',
 					'img/comic/magesty.jpg',
-					'img/comic/apo-pg5.jpg',
 					'img/comic/apo-capa-04.jpg',
-					'img/comic/lily face.jpg',
-					'img/comic/cb-pag1.jpg',
+					'img/comic/01.jpg',
 					'img/comic/desperta autor.jpg',
-
+					'img/comic/Piromantica.jpg',
+					'img/comic/Example Page.jpg',
 				],
 				works:[
-					'img/works/cartaz-sangria.jpg',
-					'img/works/ggj2017-charactes.jpg',
-					'img/works/Ronald.jpg',
-					'img/works/Bruno2.jpg',
-					'img/works/Palestra.jpg',
-					'img/works/Uno and Lily2.jpg',
-					'img/works/ggj2015.jpg',
-					'img/works/CamisaFinal.jpg',
-					'img/works/Marcelino.jpg',
-					'img/works/modelagem3d.jpg',
-					'img/works/Competition.jpg',
-					'img/works/base.jpg',
+					'img/aleatory/CBHQ-menor.jpg',
+					'img/aleatory/Eclipsa.jpg',
+					'img/aleatory/rococo2.jpg',
+					'img/aleatory/Scitech4.jpg',
+					'img/aleatory/Piromantica3-2.jpg',
+					'img/aleatory/Guarda da fronteira.jpg',
+					'img/aleatory/Game Desing.jpg',
+					'img/aleatory/cbmap - Copia.jpg',
+					'img/aleatory/MeninasSuper.jpg',
+					
+				],
+				games:[
+					'img/works/circus.jpg',
+					'img/works/ice_world.jpg',
+					'img/works/temple.jpg',
+					'img/works/lumber_mill.jpg',
+					'img/works/Capture.PNG',
+					'img/works/Screenshot (17).jpg',
+				],
+				logos:[
+					'img/aleatory/kendo logo2.png',
+					'img/aleatory/sapiencia.png',
+					'img/aleatory/CamisaFinal.jpg',
+					'img/aleatory/brogame.png',
+					'img/aleatory/theraiz5.png',
+					'img/aleatory/skywaydrone.png',
 				]
 			}
 		})
