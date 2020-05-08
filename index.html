@@ -122,7 +122,17 @@
 										</div>
 									</div>
 							</div>
-							<div class="col s12 m12 l12 left-align">
+							<div class="col s12 m3 l12 left-align">
+								<h4 class="center">Some characters from a new project</h4>
+								<div class="col s12 m6 l4" v-for='pic in characters'>
+										<div class="card">
+											<div class="card-image s12 m6 l4">
+												<img class="responsive-img z-depth-2 materialboxed hoverable" v-bind:src="pic">
+											</div>
+										</div>
+									</div>
+							</div>
+							<!--<div class="col s12 m12 l12 left-align">
 									<h4 class="center">Logos</h4>
 									<p class="center"><b>These are some logos to orders. Here are works with vector, 3D model and ilustrations</b></p>
 									<div class="col s12 m6 l4" v-for='pic in logos'>
@@ -132,7 +142,7 @@
 												</div>
 											</div>
 										</div>
-								</div>
+								</div>-->
         </div>
 		</div>
 		<div class="col s12 m12 l12 center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -192,6 +202,14 @@
 					'img/aleatory/brogame.png',
 					'img/aleatory/theraiz5.png',
 					'img/aleatory/skywaydrone.png',
+				],
+				characters:[
+					'img/chars/cara.jpg',
+					'img/chars/yasmin.jpg',
+					'img/chars/igor.jpg',
+					'img/chars/max.jpg',
+					'img/chars/clara.jpg',
+					'img/chars/tonhao.jpg',
 				]
 			}
 		})
