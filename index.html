@@ -24,26 +24,15 @@
 </script>
 
 <body>
-	<div class="container" style="margin-top: 20px">
+	<div >
 		<div class="row">
-			<div class="col s12 m3 l3">
-				<img class="circle responsive-img z-depth-2" src="img/profile.png">
-			</div>
-			<div class="col s12 m6 l7 center ">
+			<div class="col s12 m12 l12 center ">
+				<img class="circle responsive-img z-depth-1" src="img/profile.png">
 				<h3>Felipe Resende</h3>
-
-				<p>This is my portfolio of illustrations with illustrations for events, commissions, comics and other personal works. Main contact in <a href="mailto:feliperesendehq@outlook.com">feliperesendehq@outlook.com</a></p>
+				<p>My portfolio and illustrations for events, commissions, comics and others personal works. Main contact in <a href="mailto:feliperesendehq@outlook.com">feliperesendehq@outlook.com</a></p>
 			</div>
-			<div class="col s12 m3 l2 right">
-				<!--<a href="https://www.patreon.com/feliperesende" target="_blak">
-					<p class="valign-wrapper center-align">
-					<img src="img/social/path.png" class="circle">&nbsp;Patreon</p>
-				</a>
-				<a href="https://twitter.com/FelipeResendeHQ" target="_blank">
-					<p class="valign-wrapper center-align">
-					<img src="img/social/twitter.png" class="circle">&nbsp;Twitter</p>
-				</a>-->
-				<a href="https://www.facebook.com/felipe.resende.967" target="_blank">
+			<!--<div class="col s12 m3 l2 right">
+				<a href="https://www.facebook.com/IHC-Comics-386883948451750/" target="_blank">
 					<p class="valign-wrapper center-align">
 					<img src="img/social/facebook.png" class="circle">&nbsp;Facebook</p>
 				</a>
@@ -55,15 +44,36 @@
 					<p class="valign-wrapper center-align">
 					<img src="img/social/github.png" class="circle">&nbsp;Github</p>
 				</a>
+			</div>-->
+			<div class="col s12 m12 l12 center">
+				<a href="https://www.facebook.com/IHC-Comics-386883948451750/" target="_blank">
+					<img src="img/social/facebook.png" class="circle">&nbsp;Facebook
+				</a>
+				<a href="mailto:feliperesendehq@outlook.com" target="_blank">
+					<img src="img/social/gmail.png" class="circle">&nbsp;Email
+				</a>
+				<a href="https://github.com/FelipeRes" target="_blank">
+					<img src="img/social/github.png" class="circle">&nbsp;Github
+				</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col s12 m12 l12 center">
-				<h4 class="center">Personal Project </h4>
-				<p class="center"><b>This is my recent game project. Is a fantasy fighting game with UMVC3 elements and cartoon style.</b></p>
+				<h4 class="center">Personal Game Projects </h4>
 				<img src="img/aleatory/gameplay.gif" v-bind:src="pic">
+				<img src="img/aleatory/rep2.gif" v-bind:src="pic">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col s12 m12 l12 center">
+			<video width="100%" id="vid" autoplay muted loop controls>
+				<source src="img/video/Process.mp4" type="video/mp4">
+			  </video>
+			</div>
+		</div>
+		<script>
+			document.getElementById('vid').play();
+		</script>
 		<div class="row">
         <div id="images">
         	<div class="col s12 m12 l12 left-align">
@@ -80,7 +90,7 @@
 						<hr>
             <div class="col s12 m12 l12 left-align">
 							<h4 class="center">Comics </h4>
-							<p class="center"><b>I like draw comics and these are some studies, orders and personal works</b></p>
+							<p class="center"><b>I like to draw comics and these are some studies and projects, orders and personal works</b></p>
 							<div class="col s12 m6 l4" v-for='pic in comic'>
 								<div class="card">
 									<div class="card-image s12 m6 l4">
@@ -103,7 +113,7 @@
 						</div>
 						<div class="col s12 m12 l12 left-align">
 								<a href="https://labiras.cc/crownbrawl/"><h4 class="center">Crown Brawl</h4></a>
-								<p class="center"><b>This is a game where I participated as a programmer, screen designer, illustrator, did some 3D modeling and textures. I did a little of everything. You can visit the <a href="https://labiras.cc/crownbrawl/">site</a> for more information</b></p>
+								<p class="center"><b>This is a game where I participated as programmer, UI designer, illustrator, did some 3D modeling and textures. I did a little of everything. You can visit the <a href="https://labiras.cc/crownbrawl/">site</a> for more information</b></p>
 								<div class="col s12 m6 l4" v-for='pic in games'>
 										<div class="card">
 											<div class="card-image s12 m6 l4">
@@ -132,33 +142,40 @@
 			el:'#images',
 			data: {
 				aleatory:[
-					'img/aleatory/Cartaz.jpg',
-					'img/comic/arduino-day-cartaz.jpg',
-					'img/works/cartaz-sangria.jpg',
+					'img/aleatory/c.jpg',
 					'img/works/cartaz.jpg',
-					'img/works/GenuinoDay Cartaz2GG.jpg',
-					'img/works/Cartaz Final.jpg',
+					'img/works/cartaz-sangria.jpg',
 				],
 				comic:[
-					'img/comic/magesty.jpg',
 					'img/comic/apo-capa-04.jpg',
-					'img/comic/01.jpg',
-					'img/comic/desperta autor.jpg',
-					'img/comic/Piromantica.jpg',
-					'img/comic/Example Page.jpg',
+					'img/comic/cover2.jpg',
+					'img/comic/Capa Alternativa.png',
+					'img/comic/thumb2.png',
+					'img/comic/show.png',
+					'img/comic/thumb.png',
+					'img/comic/magesty.jpg',
+					
 				],
 				works:[
-					
+					'img/aleatory/trajes.png',
 					'img/aleatory/CBHQ-menor.jpg',
+					'img/aleatory/apox.jpg',
+
+					'img/aleatory/camisa.jpg',
 					'img/aleatory/Eclipsa.jpg',
 					'img/aleatory/rococo2.jpg',
-					'img/aleatory/Scitech4.jpg',
-					'img/aleatory/Piromantica3-2.jpg',
-					'img/aleatory/Guarda da fronteira.jpg',
-					'img/aleatory/cenaelaborada2.png',
-					'img/aleatory/cbmap - Copia.jpg',
-					'img/aleatory/reuniao.png',
 					
+					'img/aleatory/reuniao.png',
+					'img/aleatory/aula.jpg',
+					'img/aleatory/Piromantica3-2.jpg',
+					
+					'img/aleatory/image.png',
+					'img/aleatory/fanart.png',
+					'img/aleatory/oxente.jpg',
+					'img/aleatory/sheha.jpg',
+					
+					'img/aleatory/festa junina.jpg',
+					'img/aleatory/cenaelaborada2.png',
 				],
 				games:[
 					'img/works/circus.jpg',
